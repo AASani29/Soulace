@@ -154,7 +154,7 @@ We built Soulace with you in mind. It’s designed to be intuitive and empowerin
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/N4M154/Soulace.git
+    git clone https://github.com/AASani29/Soulace.git
     ```
 
 2. Install dependencies for the backend:
