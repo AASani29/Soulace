@@ -9,7 +9,7 @@ At **Soulace**, we are committed to supporting mental well-being, which is a cru
 
 We built Soulace with you in mind. It’s designed to be intuitive and empowering, helping you work on your mental health and live your best, balanced life. Start your journey with us today!
 
-<img src="https://github.com/N4M154/Soulace-N/blob/500b5e950fbba956c1cdae1d20cc0c50fa4ddd9b/client/public/ss/landing.png" alt="landing" width="700"/>
+<img src="https://github.com/N4M154/Soulace/blob/cb3ccbd8cdee6d3b870c35ddb315436a8762fb22/client/public/ss/landing.png" alt="landing" width="700"/>
 
 ## ⚡ Quick Start Guide
 
@@ -24,73 +24,73 @@ We built Soulace with you in mind. It’s designed to be intuitive and empowerin
 ### 1. **Personalized Profiles & Security**
    - **Safe & Simple Login:** Your mental health journey, your way. Create an account to get started.
 
-<img src="https://github.com/N4M154/Soulace-N/blob/500b5e950fbba956c1cdae1d20cc0c50fa4ddd9b/client/public/ss/login.png" alt="login" width="600"/>
+<img src="https://github.com/N4M154/Soulace/blob/cb3ccbd8cdee6d3b870c35ddb315436a8762fb22/client/public/ss/login.png" alt="login" width="600"/>
 
    - **Custom Profiles:** Add your personal info to get tailored recommendations just for you.
 
-<img src="https://github.com/N4M154/Soulace-N/blob/edaf3e69d254fb190cd5450283018556ef173e46/client/public/ss/home.png" alt="home" width="600"/>
+<img src="https://github.com/N4M154/Soulace/blob/cb3ccbd8cdee6d3b870c35ddb315436a8762fb22/client/public/ss/home.png" alt="home" width="600"/>
 
 
 ### 2. **Mental Health Resources**
    - **Guided Exercises:** Dive into mood trackers, mindfulness activities, breathing techniques, and guided meditations.
 
-<img src="https://github.com/N4M154/Soulace-N/blob/500b5e950fbba956c1cdae1d20cc0c50fa4ddd9b/client/public/ss/moodlogger.png" alt="moodlogger" width="600"/>
+<img src="https://github.com/N4M154/Soulace/blob/cb3ccbd8cdee6d3b870c35ddb315436a8762fb22/client/public/ss/moodlogger.png" alt="moodlogger" width="600"/>
 
 
    - **Blogs & Articles:** Check out articles on everything from stress relief to coping with anxiety and more.
 
-<img src="https://github.com/N4M154/Soulace-N/blob/500b5e950fbba956c1cdae1d20cc0c50fa4ddd9b/client/public/ss/contents.png" alt="contents"/>
+<img src="https://github.com/N4M154/Soulace/blob/cb3ccbd8cdee6d3b870c35ddb315436a8762fb22/client/public/ss/contents.png" alt="contents"/>
 
 ### 3. **Self-Care Tools**
    - **Interactive Tools:** Use mood and sleep trackers, plus fun tools like breathing exercises to take care of yourself.
 
-<img src="https://github.com/N4M154/Soulace-N/blob/500b5e950fbba956c1cdae1d20cc0c50fa4ddd9b/client/public/ss/relaxation.png" alt="relaxation" width="600"/>
+<img src="https://github.com/N4M154/Soulace/blob/cb3ccbd8cdee6d3b870c35ddb315436a8762fb22/client/public/ss/relaxation.png" alt="relaxation" width="600"/>
 
    - **Joke Generator:** Need a laugh? We’ve got you covered with funny jokes to lighten your mood.
 
-<img src="https://github.com/N4M154/Soulace-N/blob/500b5e950fbba956c1cdae1d20cc0c50fa4ddd9b/client/public/ss/jotd.png" alt="joke of the day" width="600"/>
+<img src="https://github.com/N4M154/Soulace/blob/cb3ccbd8cdee6d3b870c35ddb315436a8762fb22/client/public/ss/jotd.png" alt="joke of the day" width="600"/>
 
    - **Relaxation Games:** Try memory games, breathing exercises, and positive affirmations to unwind.
 
-<img src="https://github.com/N4M154/Soulace-N/blob/500b5e950fbba956c1cdae1d20cc0c50fa4ddd9b/client/public/ss/meditation.png" alt="meditation" width="600"/>
+<img src="https://github.com/N4M154/Soulace/blob/cb3ccbd8cdee6d3b870c35ddb315436a8762fb22/client/public/ss/meditation.png" alt="meditation" width="600"/>
 
 ### 4. **Community Support**
    - **Discussion Forums:** Share your experiences, connect with others, and find support in a safe space.
 
-<img src="https://github.com/N4M154/Soulace-N/blob/500b5e950fbba956c1cdae1d20cc0c50fa4ddd9b/client/public/ss/blog.png" alt="community" width="600"/>
+<img src="https://github.com/N4M154/Soulace/blob/cb3ccbd8cdee6d3b870c35ddb315436a8762fb22/client/public/ss/blog.png" alt="community" width="600"/>
 
    - **Chatbot:** Need some instant advice or support? Chat with our AI assistant anytime for personalized tips.
 
-<img src="https://github.com/N4M154/Soulace-N/blob/500b5e950fbba956c1cdae1d20cc0c50fa4ddd9b/client/public/ss/chatbot.png" alt="chatbot"/>
+<img src="https://github.com/N4M154/Soulace/blob/cb3ccbd8cdee6d3b870c35ddb315436a8762fb22/client/public/ss/chatbot.png" alt="chatbot"/>
 
 ### 5. **Track Your Progress**
    - **Wellness Tracker:** Check your progress with mood charts, daily logs, and sentiment analysis.
 
-<img src="https://github.com/N4M154/Soulace-N/blob/500b5e950fbba956c1cdae1d20cc0c50fa4ddd9b/client/public/ss/moodlogger%20analysis.png" alt="moodlogger analysis" width="600"/>
+<img src="https://github.com/N4M154/Soulace/blob/cb3ccbd8cdee6d3b870c35ddb315436a8762fb22/client/public/ss/moodlogger%20analysis.png" alt="moodlogger analysis" width="600"/>
 
    - **Achievement Dashboard:** Celebrate your wins! Earn badges as you hit your emotional milestones.
 
-<img src="https://github.com/N4M154/Soulace-N/blob/500b5e950fbba956c1cdae1d20cc0c50fa4ddd9b/client/public/ss/achievement.png" alt="achievements" width="600"/>
+<img src="https://github.com/N4M154/Soulace/blob/cb3ccbd8cdee6d3b870c35ddb315436a8762fb22/client/public/ss/achievement.png" alt="achievements" width="600"/>
 
    - **Talk to Experts:** Get recommendations for professional help based on your inputs.
 
-<img src="https://github.com/N4M154/Soulace-N/blob/500b5e950fbba956c1cdae1d20cc0c50fa4ddd9b/client/public/ss/test.png" alt="test" width="500"/> <img src="https://github.com/N4M154/Soulace-N/blob/500b5e950fbba956c1cdae1d20cc0c50fa4ddd9b/client/public/ss/test%20assessment.png" alt="test assessment" width="500"/>
+<img src="https://github.com/N4M154/Soulace/blob/cb3ccbd8cdee6d3b870c35ddb315436a8762fb22/client/public/ss/test.png" alt="test" width="500"/> <img src="https://github.com/N4M154/Soulace/blob/cb3ccbd8cdee6d3b870c35ddb315436a8762fb22/client/public/ss/test%20assessment.png" alt="test assessment" width="500"/>
 
 
 ### 6. **Mood-Based Features**
    - **Music Recommendations:** Find music that suits your mood, and let the tunes help lift your spirits.
 
-<img src="https://github.com/N4M154/Soulace-N/blob/500b5e950fbba956c1cdae1d20cc0c50fa4ddd9b/client/public/ss/music.png" alt="music" width="600"/>
+<img src="https://github.com/N4M154/Soulace/blob/cb3ccbd8cdee6d3b870c35ddb315436a8762fb22/client/public/ss/music.png" alt="music" width="600"/>
 
    - **Content Tailored to You:** Access articles and videos based on your mental health needs.
 
 ### 7. **Meditation & Journaling**
    - **Meditation Exercises:** Choose from different guided meditations to help relax your mind and body.
 
-<img src="https://github.com/N4M154/Soulace-N/blob/500b5e950fbba956c1cdae1d20cc0c50fa4ddd9b/client/public/ss/progress%20analytics.png" alt="progress analytics" width="600"/>
+<img src="https://github.com/N4M154/Soulace/blob/cb3ccbd8cdee6d3b870c35ddb315436a8762fb22/client/public/ss/progress%20analytics.png" alt="progress analytics" width="600"/>
 
    - **Daily Journal:** Keep a reflective diary to track your thoughts and feelings over time.
-<img src="https://github.com/N4M154/Soulace-N/blob/500b5e950fbba956c1cdae1d20cc0c50fa4ddd9b/client/public/ss/journal.png" alt="journal" width="600"/>
+<img src="https://github.com/N4M154/Soulace/blob/cb3ccbd8cdee6d3b870c35ddb315436a8762fb22/client/public/ss/journal.png" alt="journal" width="600"/>
 
 
 ## Tools & Tech Behind Soulace 💻
@@ -154,7 +154,7 @@ We built Soulace with you in mind. It’s designed to be intuitive and empowerin
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/AASani29/Soulace.git
+    git clone https://github.com/N4M154/Soulace.git
     ```
 
 2. Install dependencies for the backend:

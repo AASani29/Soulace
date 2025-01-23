@@ -1,9 +1,3 @@
-//
-
-//------------------------------new
-
-//----------------------------------------------
-
 import { AnimatePresence, motion } from "framer-motion";
 import {
   ChevronDown,
@@ -15,12 +9,121 @@ import {
   X,
 } from "lucide-react";
 import { useEffect, useState } from "react";
-import Footer from "../components/Footer.jsx";
-import Header from "../components/Header.jsx";
-import SideButtons from "../components/SideButtons.jsx";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import SideButtons from "../components/SideButtons";
+
+// BlogModal Component
+function BlogModal({ blog, isOpen, onClose, onLike, onLove }) {
+  // Prevent scroll when modal is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [isOpen]);
+
+  return (
+    <AnimatePresence>
+      {isOpen && (
+        <>
+          {/* Backdrop */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={onClose}
+            className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50"
+          />
+
+          {/* Modal Container - Added padding to ensure modal stays within viewport */}
+          <div className="fixed inset-0 overflow-y-auto z-50 p-4 sm:p-6 md:p-8">
+            {/* Modal Content */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.95, y: 20 }}
+              transition={{ type: "spring", duration: 0.5 }}
+              className="relative w-full max-w-4xl mx-auto bg-white dark:bg-[#2c2c2c] rounded-2xl shadow-2xl"
+            >
+              {/* Close button */}
+              <button
+                onClick={onClose}
+                className="absolute right-4 top-4 p-2 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+              >
+                <X className="w-5 h-5 text-gray-600 dark:text-gray-300" />
+              </button>
+
+              <div className="p-4 sm:p-6 md:p-8 max-h-[calc(100vh-4rem)] overflow-y-auto">
+                {/* Media */}
+                {blog.media && (
+                  <div className="mb-8 rounded-xl overflow-hidden">
+                    {blog.media.endsWith(".mp4") ? (
+                      <video controls className="w-full rounded-xl">
+                        <source src={blog.media} type="video/mp4" />
+                      </video>
+                    ) : (
+                      <img
+                        src={blog.media}
+                        alt="Blog content"
+                        className="w-full max-h-[50vh] object-cover rounded-xl"
+                      />
+                    )}
+                  </div>
+                )}
+
+                {/* Content */}
+                <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 dark:text-white mb-4">
+                  {blog.title}
+                </h2>
+
+                <p className="text-sm text-gray-500 dark:text-gray-400 mb-6">
+                  Written by {blog.author}
+                </p>
+
+                <div className="prose dark:prose-invert max-w-none mb-8">
+                  <p className="text-gray-600 dark:text-gray-300 whitespace-pre-wrap">
+                    {blog.content}
+                  </p>
+                </div>
+
+                {/* Interaction buttons */}
+                <div className="flex gap-4 pt-4 border-t dark:border-gray-700">
+                  <motion.button
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    onClick={onLike}
+                    className="flex items-center gap-2 text-gray-500 hover:text-teal-500 transition-colors"
+                  >
+                    <ThumbsUp className="w-5 h-5" />
+                    <span>{blog.likes}</span>
+                  </motion.button>
+                  <motion.button
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    onClick={onLove}
+                    className="flex items-center gap-2 text-gray-500 hover:text-pink-500 transition-colors"
+                  >
+                    <Heart className="w-5 h-5" />
+                    <span>{blog.loves}</span>
+                  </motion.button>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </>
+      )}
+    </AnimatePresence>
+  );
+}
 
 const CommunityPage = () => {
   const [blogs, setBlogs] = useState([]);
+  const [selectedBlog, setSelectedBlog] = useState(null);
   const [newBlog, setNewBlog] = useState({
     title: "",
     content: "",
@@ -58,6 +161,28 @@ const CommunityPage = () => {
 
     fetchBlogs();
   }, []);
+
+  const handleLike = (blogId) => {
+    setBlogs((prevBlogs) =>
+      prevBlogs.map((b) =>
+        b._id === blogId ? { ...b, likes: b.likes + 1 } : b
+      )
+    );
+    if (selectedBlog?._id === blogId) {
+      setSelectedBlog((prev) => ({ ...prev, likes: prev.likes + 1 }));
+    }
+  };
+
+  const handleLove = (blogId) => {
+    setBlogs((prevBlogs) =>
+      prevBlogs.map((b) =>
+        b._id === blogId ? { ...b, loves: b.loves + 1 } : b
+      )
+    );
+    if (selectedBlog?._id === blogId) {
+      setSelectedBlog((prev) => ({ ...prev, loves: prev.loves + 1 }));
+    }
+  };
 
   // Existing handlers...
   const handleChange = (e) => {
@@ -116,10 +241,10 @@ const CommunityPage = () => {
 
   if (loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-teal-50 to-white">
+      <div className="min-h-screen flex items-center justify-center bg-teal-50 dark:bg-[#2c2c2c]">
         <div className="space-y-4 text-center">
           <div className="w-16 h-16 border-4 border-teal-500 border-t-transparent rounded-full animate-spin mx-auto"></div>
-          <p className="text-lg text-teal-800 font-medium">
+          <p className="text-lg text-teal-800 dark:text-teal-200 font-medium">
             Loading amazing content...
           </p>
         </div>
@@ -342,21 +467,19 @@ const CommunityPage = () => {
                   <p className="text-gray-600 dark:text-gray-300 mb-6 line-clamp-3">
                     {blog.content}
                   </p>
-                  <div className="flex items-center justify-between">
+                  <button
+                    onClick={() => setSelectedBlog(blog)}
+                    className="text-teal-600 dark:text-teal-400 font-medium hover:underline"
+                  >
+                    Read More
+                  </button>
+                  <div className="flex items-center justify-between mt-4">
                     <div className="flex gap-4">
                       <motion.button
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
                         className="flex items-center gap-2 text-gray-500 hover:text-teal-500 transition-colors"
-                        onClick={() =>
-                          setBlogs((prevBlogs) =>
-                            prevBlogs.map((b) =>
-                              b._id === blog._id
-                                ? { ...b, likes: b.likes + 1 }
-                                : b
-                            )
-                          )
-                        }
+                        onClick={() => handleLike(blog._id)}
                       >
                         <ThumbsUp className="w-5 h-5" />
                         <span>{blog.likes}</span>
@@ -365,15 +488,7 @@ const CommunityPage = () => {
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
                         className="flex items-center gap-2 text-gray-500 hover:text-pink-500 transition-colors"
-                        onClick={() =>
-                          setBlogs((prevBlogs) =>
-                            prevBlogs.map((b) =>
-                              b._id === blog._id
-                                ? { ...b, loves: b.loves + 1 }
-                                : b
-                            )
-                          )
-                        }
+                        onClick={() => handleLove(blog._id)}
                       >
                         <Heart className="w-5 h-5" />
                         <span>{blog.loves}</span>
@@ -386,7 +501,16 @@ const CommunityPage = () => {
           </div>
         </div>
 
-        <Footer></Footer>
+        {/* Blog Modal */}
+        <BlogModal
+          blog={selectedBlog}
+          isOpen={!!selectedBlog}
+          onClose={() => setSelectedBlog(null)}
+          onLike={() => selectedBlog && handleLike(selectedBlog._id)}
+          onLove={() => selectedBlog && handleLove(selectedBlog._id)}
+        />
+
+        <Footer />
       </div>
     </div>
   );
