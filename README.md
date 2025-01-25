@@ -92,6 +92,12 @@ We built Soulace with you in mind. It’s designed to be intuitive and empowerin
    - **Daily Journal:** Keep a reflective diary to track your thoughts and feelings over time.
 <img src="https://github.com/N4M154/Soulace/blob/cb3ccbd8cdee6d3b870c35ddb315436a8762fb22/client/public/ss/journal.png" alt="journal" width="600"/>
 
+### 8. **Dark Theme Support**
+   - **Reduce Eye Strain**: Perfect for evening or nighttime use.  
+   - **Save Battery Life**: Optimized for OLED and AMOLED screens.  
+   - **Sleek Aesthetic**: Enjoy a modern, minimalistic dark interface.
+
+<img src="https://github.com/N4M154/Soulace/blob/23a83ff121fdaf49a90792dc590cbb558f5ffd0c/client/public/ss/light.png" alt="light" width="500"/> <img src="https://github.com/N4M154/Soulace/blob/23a83ff121fdaf49a90792dc590cbb558f5ffd0c/client/public/ss/dark.png" alt="dark" width="500"/>
 
 ## Tools & Tech Behind Soulace 💻
 
@@ -196,8 +202,7 @@ We built Soulace with you in mind. It’s designed to be intuitive and empowerin
     VITE_GOOGLE_UTUBE_API_KEY = "<your_youtube_data_api_v3_api_key>"
     ```
 
----
----
+## Check **Soulace** in action : [Soulace](https://soulace.onrender.com/)
 
 ## 💬 Contribute and Be Part of the Soulace Family!
 
